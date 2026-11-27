@@ -1,0 +1,105 @@
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    background-color: #023020;
+    color: #FFFFFF;
+}
+
+.profile-navbar {
+    --bs-navbar-color: #FFFFFF;
+    --bs-navbar-hover-color: rgba(255, 255, 255, 0.75);
+    --bs-navbar-active-color: #FFFFFF;
+    --bs-navbar-toggler-border-color: rgba(255, 255, 255, 0.5);
+    background-color: #023020;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.profile-navbar .navbar-brand {
+    color: #FFFFFF;
+}
+
+.profile-navbar .navbar-toggler-icon {
+    filter: invert(1);
+}
+
+.card {
+    --bs-card-color: #FFFFFF;
+    --bs-card-bg: #023020;
+    color: #FFFFFF;
+    background-color: #023020;
+    border: 1px solid #FFFFFF;
+}
+
+h4 {
+    text-align: center;
+    margin-top: .25rem;
+}
+
+#sobre-mi .text-justify {
+    text-align: justify;
+}
+
+.main-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-card {
+    flex-grow: 1;
+}
+
+.projects-carousel .carousel-control-prev-icon,
+.projects-carousel .carousel-control-next-icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    filter: drop-shadow(0 0 0.75px #FFFFFF);
+}
+
+.badge-skill {
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.aside-panel {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+#certificaciones h3 {
+    font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+    overflow-wrap: normal;
+}
+
+.certiprof-img {
+    display: block;
+    width: 200px;
+    max-width: 100%;
+    height: 200px;
+    margin-inline: auto;
+}
+
+.lll {
+    transform: scale(1.1);
+}
+
+.skill-icon {
+    width: 52px;
+    height: 52px;
+}
+
+.footer {
+    background-color: #023020;
+    border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 991.98px) {
+    .profile-navbar-brand {
+        max-width: calc(100% - 3.5rem);
+        white-space: normal;
+    }
+}
+
