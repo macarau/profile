@@ -1,5 +1,7 @@
 import { Container, Row, Col, Image } from 'react-bootstrap'
 
+const base = import.meta.env.BASE_URL
+
 function Footer() {
     return (
         <footer id="contacto" className="footer text-white">
@@ -8,17 +10,17 @@ function Footer() {
                 <Row className="justify-content-center mt-3gx-5">
                     <Col xs="auto">
                         <a href="mailto:ma.rau@duocuc.cl" aria-label="Enviar correo">
-                            <Image src="/png/email.webp" rounded width={50} height={50} alt="Email" />
+                            <Image src={`${base}png/email.webp`} rounded width={50} height={50} alt="Email" />
                         </a>
                     </Col>
                     <Col xs="auto">
                         <a href="https://github.com/macarau" target="_blank" rel="noreferrer" aria-label="GitHub">
-                            <Image src="/png/github.png" rounded width={50} height={50} alt="GitHub" />
+                            <Image src={`${base}png/github.png`} rounded width={50} height={50} alt="GitHub" />
                         </a>
                     </Col>
                     <Col xs="auto">
                         <a href="https://www.credly.com/users/macarena-rau-catalan.bdeaaedf/" target="_blank" rel="noreferrer" aria-label="Credly">
-                            <Image src="/png/credly.png" rounded width={50} height={50} alt="Credly" />
+                            <Image src={`${base}png/credly.png`} rounded width={50} height={50} alt="Credly" />
                         </a>
                     </Col>
                 </Row>

@@ -2,6 +2,8 @@ import { Container, Row, Col, Badge, Card, Image } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Proyectos from './components/Proyectos'
 
+const base = import.meta.env.BASE_URL
+
 const skillIcons = Object.entries(
     import.meta.glob('./assets/svg/*.svg', {
         eager: true,
@@ -11,11 +13,11 @@ const skillIcons = Object.entries(
 ).sort(([firstPath], [secondPath]) => firstPath.localeCompare(secondPath))
 
 const certifications = [
-    { src: '/png/capc.png', alt: 'CAPC Badge', title: 'Cybersecurity Awareness (CAPC)', },
-    { src: '/png/csfpc.png', alt: 'CSFPC Badge', title: 'CyberSecurity Foundation (CSFPC)', },
-    { src: '/png/cehpc.png', alt: 'CEHPC Badge', title: 'Ethical Hacking (CEHPC)', },
-    { src: '/png/lcspc.png', alt: 'LCSPC Badge', title: 'Lead Cybersecurity (LCSPC)', },
-    { src: '/png/lll.png', alt: 'LLL Badge', title: 'Lifelong Learning (LLL)', className: 'lll', },
+    { src: `${base}png/capc.png`, alt: 'CAPC Badge', title: 'Cybersecurity Awareness (CAPC)', },
+    { src: `${base}png/csfpc.png`, alt: 'CSFPC Badge', title: 'CyberSecurity Foundation (CSFPC)', },
+    { src: `${base}png/cehpc.png`, alt: 'CEHPC Badge', title: 'Ethical Hacking (CEHPC)', },
+    { src: `${base}png/lcspc.png`, alt: 'LCSPC Badge', title: 'Lead Cybersecurity (LCSPC)', },
+    { src: `${base}png/lll.png`, alt: 'LLL Badge', title: 'Lifelong Learning (LLL)', className: 'lll', },
 ]
 
 const skillCategories = [
